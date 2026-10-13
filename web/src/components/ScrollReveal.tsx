@@ -1,8 +1,13 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type ReactNode,
+  type RefObject,
+} from "react";
 
 type Props = {
   children: ReactNode;
-  as?: keyof HTMLElementTagNameMap;
   className?: string;
   /** mask reveal instead of fade/rise */
   mask?: boolean;
@@ -17,7 +22,6 @@ type Props = {
  */
 export default function ScrollReveal({
   children,
-  as: Tag = "div",
   className = "",
   mask = false,
   delay = 0,
@@ -52,13 +56,12 @@ export default function ScrollReveal({
 
   const base = mask ? "reveal-mask" : "reveal";
   return (
-    <Tag
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ref={ref as any}
+    <div
+      ref={ref as RefObject<HTMLDivElement>}
       className={`${base} ${visible ? "is-visible" : ""} ${className}`.trim()}
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       {children}
-    </Tag>
+    </div>
   );
 }
