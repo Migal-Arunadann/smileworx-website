@@ -73,8 +73,6 @@ function formatDate(iso: string) {
 
 type Props = { initialTreatment?: string };
 
-const VALID_TREATMENT_IDS = ["general", ...TREATMENTS.map((t) => t.id), "unsure"];
-
 export default function ContactForm({ initialTreatment }: Props) {
   const [values, setValues] = useState<Values>(() => initialValues(initialTreatment));
   const [errors, setErrors] = useState<Partial<Record<keyof Values, string>>>({});

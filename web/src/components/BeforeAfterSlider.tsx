@@ -114,11 +114,10 @@ export default function BeforeAfterSlider({
       <div
         className="ba__clipped"
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
-        aria-hidden="true"
       >
         <img
           src={beforeSrc}
-          alt=""
+          alt={beforeAlt}
           width={width}
           height={height}
           draggable={false}
