@@ -2,7 +2,7 @@
     admin off
 }
 
-:{$PORT:3000} {
+http://:80, http://:3000, http://:{$PORT:80} {
     root * .
     encode gzip zstd
     file_server
