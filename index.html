@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smileworx Dental Care | Dental Clinic in Ponniammanmedu, Chennai</title>
+  <meta name="description" content="Smileworx Dental Care is a modern dental clinic in Ponniammanmedu, Chennai led by Dental Surgeon Dr. S. Helen Joice. Professional care for braces, clear aligners, dental implants, dentures, veneers, and crowns.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mukta+Malar:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Clinic Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span style="display: inline-flex; align-items: center; gap: 0.35rem; color: #FAF7F0;">
+          <strong class="tamil-script" style="color: var(--gold-signature); font-weight: 600;">ஸ்மைல்ஒர்க்ஸ் பல் மருத்துவமனை</strong>
+          <span style="opacity: 0.6; margin: 0 0.25rem;">·</span>
+          <span>Ponniammanmedu, Chennai</span>
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 0.35rem; opacity: 0.9;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--gold-signature)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Mon–Sat: 9:30 AM–1:00 PM &amp; 5:30–9:00 PM</span>
+        </span>
+      </div>
+      <div>
+        <a href="tel:+919360553755" style="display: inline-flex; align-items: center; gap: 0.35rem; color: var(--gold-light); font-weight: 600;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--gold-signature)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 93605 53755</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Gold Brand Logo -->
+      <a href="index.html" class="header-logo" aria-label="Smileworx Dental Care Homepage">
+        <img src="images/brand/logo-gold.png" alt="Smileworx Dental Care Logo in Gold">
+      </a>
+
+      <!-- Desktop Navigation: Home, About, Treatments, Contacts -->
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link-dark active">Home</a>
+        <a href="about.html" class="nav-link-dark">About</a>
+        <a href="treatments.html" class="nav-link-dark">Treatments</a>
+        <a href="contact.html" class="nav-link-dark">Contacts</a>
+      </nav>
+
+      <!-- Desktop Action: Direct Phone Call (No booking module) -->
+      <div class="desktop-actions">
+        <a href="tel:+919360553755" class="btn btn-gold">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call: 93605 53755</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu: Home, About, Treatments, Contacts -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link active"><span>Home</span> <span>→</span></a></li>
+        <li><a href="about.html" class="mobile-nav-link"><span>About</span> <span>→</span></a></li>
+        <li><a href="treatments.html" class="mobile-nav-link"><span>Treatments</span> <span>→</span></a></li>
+        <li><a href="contact.html" class="mobile-nav-link"><span>Contacts</span> <span>→</span></a></li>
+      </ul>
+      <a href="tel:+919360553755" class="btn btn-gold" style="width: 100%; text-align: center;">Call: +91 93605 53755</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section style="position: relative; padding-top: clamp(3rem, 5vw, 5.5rem); padding-bottom: clamp(3.5rem, 6vw, 6.5rem); background-color: var(--bg-ivory); border-bottom: 1px solid var(--border-light); overflow: hidden;">
+      <div class="container">
+        <div class="editorial-grid-2">
+          <!-- Left Column -->
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap; margin-bottom: 1rem;">
+              <span class="editorial-kicker" style="margin-bottom: 0;">Smileworx Dental Care · Chennai</span>
+              <span class="badge-tag badge-tag-gold tamil-script" style="font-weight: 600;">ஸ்மைல்ஒர்க்ஸ் பல் மருத்துவமனை</span>
+            </div>
+
+            <h1 class="headline-hero" style="margin-bottom: 1.4rem; color: var(--plum-deep);">
+              Care for your smile.<br>
+              <span style="font-style: italic; font-weight: 400; color: var(--plum-secondary);">Confidence in every detail.</span>
+            </h1>
+
+            <p style="font-size: clamp(1.05rem, 1.4vw, 1.2rem); line-height: 1.65; color: var(--text-secondary); margin-bottom: 2rem; max-width: 560px;">
+              Personalised, gentle dental care in Ponniammanmedu, Chennai. Led by Dental Surgeon Dr. S. Helen Joice, we guide you through clear orthodontic, restorative, and general dental treatment choices with genuine time and clinical attention.
+            </p>
+
+            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem;">
+              <a href="tel:+919360553755" class="btn btn-gold">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Call +91 93605 53755</span>
+              </a>
+              <a href="treatments.html" class="btn btn-secondary">
+                <span>Explore Treatments</span>
+                <span style="font-size: 1.1rem;">→</span>
+              </a>
+            </div>
+
+            <!-- Quick Direct Callout -->
+            <div style="display: inline-flex; align-items: center; gap: 1rem; padding: 0.85rem 1.25rem; background-color: var(--bg-cream); border: 1px solid var(--border-light); border-radius: var(--radius-sm);">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background-color: var(--plum-primary); display: flex; align-items: center; justify-content: center; color: var(--gold-light);">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600;">Direct Clinic Inquiries</p>
+                <a href="tel:+919360553755" style="font-size: 1.05rem; font-weight: 700; color: var(--plum-primary);">+91 93605 53755</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Hero Photo with Gold Frame) -->
+          <div style="position: relative;">
+            <div class="gold-offset-border">
+              <div class="editorial-frame" style="aspect-ratio: 4/3; max-height: 520px;">
+                <img src="images/hero/hero-consultation.jpg" alt="Dental consultation at Smileworx Dental Care Chennai" loading="eager">
+              </div>
+            </div>
+
+            <!-- Floating Badge -->
+            <div style="position: absolute; bottom: -20px; left: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 0.85rem 1.35rem; border: 1px solid var(--border-light); border-radius: var(--radius-sm); box-shadow: var(--shadow-editorial); display: flex; align-items: center; gap: 0.75rem;">
+              <div style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--gold-signature);"></div>
+              <div>
+                <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--plum-primary);">Consulting Surgeon</p>
+                <p style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">Dr. S. Helen Joice, Dental Surgeon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SIGNBOARD HIGHLIGHTS BANNER -->
+    <section style="background-color: var(--plum-deep); color: #FAF7F0; padding: 2.25rem 0; border-bottom: 2px solid var(--gold-signature);">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="padding: 0.5rem 0.85rem; background: rgba(223, 192, 102, 0.15); border: 1px solid var(--gold-signature); border-radius: var(--radius-sm); color: var(--gold-light); font-size: 0.85rem; font-weight: 700;">
+              CLINIC BOARD
+            </div>
+            <div>
+              <p style="font-size: 0.85rem; color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.08em;">Official Signage Disciplines</p>
+              <p class="tamil-script" style="font-size: 1.05rem; color: #FFFFFF; font-weight: 600;">
+                பல் வரிசைப் படுத்துதல் · அலைனர்ஸ் · இம்ப்ளான்ட்ஸ் · செயற்கை பல்செட் · Veneers &amp; Crowns
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="treatments.html" class="btn btn-outline-light" style="padding: 0.6rem 1.25rem; font-size: 0.82rem;">
+              View All Disciplines →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CORE CLINICAL DISCIPLINES (GRID) -->
+    <section class="section-padding" style="background-color: #FFFFFF; border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div style="max-width: 720px; margin-bottom: 3.5rem;">
+          <span class="editorial-kicker">Clinical Specialties</span>
+          <h2 class="headline-section" style="color: var(--plum-deep); margin-bottom: 1rem;">
+            Comprehensive dental care designed around your comfort.
+          </h2>
+          <div class="gold-divider"></div>
+          <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.65;">
+            From modern invisible alignment to long-lasting implant restorations, our treatment recommendations are grounded in anatomical evaluation and long-term oral stability.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
+          <!-- Card 1: Braces -->
+          <div class="clinic-accent-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="badge-plum-gold">01</span>
+                <span class="tamil-script" style="color: var(--plum-primary); font-weight: 600; font-size: 0.9rem;">பல் வரிசைப் படுத்துதல்</span>
+              </div>
+              <h3 class="headline-card" style="color: var(--plum-deep); margin-bottom: 0.75rem;">Orthodontic Braces</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Traditional and ceramic fixed appliances to correct dental crowding, crossbites, and aesthetic misalignment across all age groups.
+              </p>
+            </div>
+            <a href="treatments.html#braces" class="btn-text">Learn More About Braces →</a>
+          </div>
+
+          <!-- Card 2: Clear Aligners -->
+          <div class="clinic-accent-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="badge-plum-gold">02</span>
+                <span class="tamil-script" style="color: var(--plum-primary); font-weight: 600; font-size: 0.9rem;">அலைனர்ஸ்</span>
+              </div>
+              <h3 class="headline-card" style="color: var(--plum-deep); margin-bottom: 0.75rem;">Clear Aligners</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Discreet, custom-molded transparent trays that incrementally guide your teeth into optimal alignment without metal brackets or wires.
+              </p>
+            </div>
+            <a href="treatments.html#aligners" class="btn-text">Learn More About Aligners →</a>
+          </div>
+
+          <!-- Card 3: Dental Implants -->
+          <div class="clinic-accent-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="badge-plum-gold">03</span>
+                <span class="tamil-script" style="color: var(--plum-primary); font-weight: 600; font-size: 0.9rem;">இம்ப்ளான்ட்ஸ்</span>
+              </div>
+              <h3 class="headline-card" style="color: var(--plum-deep); margin-bottom: 0.75rem;">Dental Implants</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Biocompatible titanium fixtures permanently integrated into jawbone to replace missing single or multiple teeth with natural bite strength.
+              </p>
+            </div>
+            <a href="treatments.html#implants" class="btn-text">Learn More About Implants →</a>
+          </div>
+
+          <!-- Card 4: Dentures -->
+          <div class="clinic-accent-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="badge-plum-gold">04</span>
+                <span class="tamil-script" style="color: var(--plum-primary); font-weight: 600; font-size: 0.9rem;">செயற்கை பல்செட்</span>
+              </div>
+              <h3 class="headline-card" style="color: var(--plum-deep); margin-bottom: 0.75rem;">Custom Dentures</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Precision complete and partial removable prosthetics carefully designed for comfortable retention, speech clarity, and youthful facial support.
+              </p>
+            </div>
+            <a href="treatments.html#dentures" class="btn-text">Learn More About Dentures →</a>
+          </div>
+
+          <!-- Card 5: Veneers & Crowns -->
+          <div class="clinic-accent-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="badge-plum-gold">05</span>
+                <span class="badge-plum">Aesthetic Finish</span>
+              </div>
+              <h3 class="headline-card" style="color: var(--plum-deep); margin-bottom: 0.75rem;">Veneers &amp; Crowns</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Ultra-thin porcelain laminates and full zirconia crowns engineered to repair chipped, stained, or broken teeth with life-like translucency.
+              </p>
+            </div>
+            <a href="treatments.html#veneers" class="btn-text">Learn More About Veneers →</a>
+          </div>
+
+          <!-- Card 6: Preventive & Family Care -->
+          <div class="clinic-accent-card" style="padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="badge-plum-gold">06</span>
+                <span class="badge-plum">Routine Wellness</span>
+              </div>
+              <h3 class="headline-card" style="color: var(--plum-deep); margin-bottom: 0.75rem;">Root Canal &amp; Preventive</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Gentle ultrasonic scaling, tooth-colored composite restorations, and pain-free endodontic therapy to preserve your biological teeth.
+              </p>
+            </div>
+            <a href="treatments.html#preventive" class="btn-text">Learn More About General Care →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: HIGH-ACCURACY CLINICAL BEFORE & AFTER SLIDER -->
+    <section class="section-padding" style="background-color: var(--bg-cream); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto 3rem auto;">
+          <span class="editorial-kicker" style="justify-content: center;">Clinical Transformation</span>
+          <h2 class="headline-section" style="color: var(--plum-deep); margin-bottom: 1rem;">
+            Aesthetic Smile Restoration
+          </h2>
+          <div class="gold-divider" style="margin: 1.25rem auto;"></div>
+          <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.65;">
+            Drag the gold slider below to see the authentic clinical transformation of worn, chipped anterior enamel restored with balanced, natural porcelain veneers.
+          </p>
+        </div>
+
+        <!-- The Interactive Slider Stage -->
+        <div style="width: 100%; max-width: 960px; margin: 0 auto;">
+          <div id="before-after-slider" class="before-after-container" tabindex="0" role="slider" aria-label="Interactive Before and After dental restoration comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <!-- Underneath Image (Before) -->
+            <img src="images/comparisons/before.jpg" alt="Teeth appearance before aesthetic dental restoration" class="before-after-image">
+
+            <!-- Clipped Overlay Image (After) -->
+            <div id="after-clip" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); pointer-events: none;">
+              <img src="images/comparisons/after.jpg" alt="Teeth appearance after porcelain veneer placement" class="before-after-image">
+            </div>
+
+            <!-- Labels -->
+            <div class="before-after-tag before">BEFORE: WEAR &amp; CHIPPING</div>
+            <div class="before-after-tag after">AFTER: PORCELAIN VENEERS</div>
+
+            <!-- Draggable Divider Line and Button Thumb -->
+            <div id="before-after-handle" class="before-after-handle" style="left: 50%;">
+              <div class="before-after-button" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 15 12 9 6" transform="rotate(180 12 12)"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Caption & Instruction -->
+          <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.75rem; font-size: 0.84rem; color: var(--text-secondary);">
+            <p style="font-style: italic; max-width: 640px;">
+              * Authentic clinical case demonstrating aesthetic porcelain veneers restoring worn, uneven anterior tooth enamel. Individual outcomes vary depending on oral anatomy.
+            </p>
+            <span style="font-size: 0.78rem; color: var(--text-muted); background-color: #FFFFFF; padding: 0.25rem 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+              Drag slider or use ← / → arrow keys
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CLINIC DOCTOR & CARE PHILOSOPHY -->
+    <section class="section-padding" style="background-color: #FFFFFF; border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="editorial-grid-2">
+          <!-- Doctor Frame -->
+          <div>
+            <div class="gold-offset-border">
+              <div class="editorial-frame" style="aspect-ratio: 4/3; max-height: 480px;">
+                <img src="images/about/clinic-care.jpg" alt="Dr. S. Helen Joice consultation area at Smileworx Dental Care" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor Bio -->
+          <div>
+            <span class="editorial-kicker">Clinical Leadership</span>
+            <h2 class="headline-section" style="color: var(--plum-deep); margin-bottom: 1rem;">
+              Meet Dr. S. Helen Joice
+            </h2>
+            <p style="font-size: 1.05rem; font-weight: 600; color: var(--plum-secondary); margin-bottom: 1.25rem;">
+              Dental Surgeon · Founder of Smileworx Dental Care
+            </p>
+            <div class="gold-divider"></div>
+            <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+              At Smileworx Dental Care, we believe that exceptional dental care begins with thoughtful listening. Dr. Helen Joice founded this clinic in Ponniammanmedu to provide neighborhood families with high-standard, gentle, and unhurried treatments.
+            </p>
+            <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+              Whether examining an orthodontic case or explaining maintenance after a dental crown, every patient receives transparent treatment timelines and step-by-step guidance without confusing jargon.
+            </p>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="about.html" class="btn btn-secondary">Read Full Story</a>
+              <a href="contact.html" class="btn btn-gold">Contact &amp; Timings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SCHEDULE & LOCATION CALLOUT -->
+    <section class="section-padding-sm" style="background-color: var(--plum-primary); color: #FAF7F0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+          <div>
+            <span class="editorial-kicker-gold">Visit Us</span>
+            <h3 style="font-size: 1.85rem; color: #FAF7F0; margin-bottom: 0.75rem;">Smileworx Dental Care</h3>
+            <p style="color: var(--text-inverse-muted); font-size: 0.95rem; line-height: 1.6;">
+              #12/C, Valliammai Nagar Extn, Ponniammanmedu,<br>
+              Chennai - 600110, Tamil Nadu, India.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: var(--gold-signature); font-size: 1.1rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em;">Consulting Hours</h4>
+            <p style="color: #FAF7F0; font-size: 0.95rem; margin-bottom: 0.25rem;">
+              <strong>Monday – Saturday:</strong> 9:30 AM – 1:00 PM &amp; 5:30 PM – 9:00 PM
+            </p>
+            <p style="color: var(--gold-light); font-size: 0.92rem; font-weight: 600;">
+              <strong>Sunday:</strong> Based on Appointments
+            </p>
+          </div>
+
+          <div style="text-align: right;">
+            <a href="tel:+919360553755" class="btn btn-gold" style="width: 100%; max-width: 260px;">
+              Call 93605 53755
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Mobile Action Bar (Direct Call & WhatsApp) -->
+  <div class="mobile-action-bar">
+    <a href="tel:+919360553755" class="btn btn-primary" style="flex: 1; padding: 0.65rem 1rem; font-size: 0.84rem;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call Clinic</span>
+    </a>
+    <a href="https://wa.me/919360553755" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="flex: 1; padding: 0.65rem 1rem; font-size: 0.84rem;">
+      <span>WhatsApp Us</span>
+    </a>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <img src="images/brand/logo-gold.png" alt="Smileworx Dental Care" style="height: 48px; width: auto; margin-bottom: 1.25rem;">
+          <p class="tamil-script" style="color: var(--gold-signature); font-size: 1rem; font-weight: 600; margin-bottom: 0.85rem;">
+            ஸ்மைல்ஒர்க்ஸ் பல் மருத்துவமனை
+          </p>
+          <p style="color: var(--text-inverse-muted); font-size: 0.92rem; line-height: 1.65; max-width: 320px;">
+            A premier dental clinic in Ponniammanmedu, Chennai, committed to gentle, patient-first dental care led by Dr. S. Helen Joice.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links: Home, About, Treatments, Contacts -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Treatments -->
+        <div>
+          <h4 class="footer-heading">Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="treatments.html#braces">Orthodontic Braces</a></li>
+            <li><a href="treatments.html#aligners">Clear Aligners</a></li>
+            <li><a href="treatments.html#implants">Dental Implants</a></li>
+            <li><a href="treatments.html#dentures">Dentures</a></li>
+            <li><a href="treatments.html#veneers">Veneers &amp; Crowns</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Hours -->
+        <div>
+          <h4 class="footer-heading">Clinic Address</h4>
+          <p style="color: var(--text-inverse-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1rem;">
+            #12/C, Valliammai Nagar Extn,<br>
+            Ponniammanmedu, Chennai - 600110.
+          </p>
+          <p style="color: var(--gold-signature); font-size: 0.88rem; margin-bottom: 0.35rem;">
+            <strong>Phone:</strong> +91 93605 53755
+          </p>
+          <p style="color: var(--text-inverse-muted); font-size: 0.84rem;">
+            <strong>Mon–Sat:</strong> 9:30 AM–1 PM &amp; 5:30–9 PM<br>
+            <strong>Sunday:</strong> Based on Appointments
+          </p>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(223, 192, 102, 0.2); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.82rem; color: var(--text-inverse-muted);">
+        <p>© 2026 Smileworx Dental Care. All rights reserved.</p>
+        <p>llesocialmedia sample page</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Master Vanilla JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
